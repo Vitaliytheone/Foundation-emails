@@ -2,7 +2,6 @@
     .wrap-img {
         .wrapper-inner {
             background-color: $purple-dark;
-            background-image: url("https://res.cloudinary.com/dpwmtx3bn/image/upload/v1643633246/bg_npt46k.png");
 
             @media only screen and (max-width: #{$global-breakpoint}) {
                 background-position: 35% !important;
