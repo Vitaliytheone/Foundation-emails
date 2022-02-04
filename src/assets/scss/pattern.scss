@@ -1,0 +1,22 @@
+body,
+html,
+.body {
+    background: #e5e5e5 !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+table.body .col-wrap.columns {
+    padding-bottom: 0 !important;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+    }
+}

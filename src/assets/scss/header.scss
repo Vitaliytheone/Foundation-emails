@@ -1,0 +1,25 @@
+.header {
+    margin-bottom: 0;
+
+    .wrapper-inner {
+        background-color: $white;
+        border-bottom: 1px solid $primary-color;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: bold;
+        color: $purple-dark;
+        margin-bottom: 0;
+    }
+
+    .link-delimiter {
+        color: #b9c1cd;
+        padding: 0 8px;
+    }
+
+    .col {
+        padding: 0 !important;
+    }
+}
