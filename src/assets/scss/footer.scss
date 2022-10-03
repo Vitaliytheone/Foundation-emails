@@ -1,33 +1,33 @@
 .footer {
-    .wrapper-inner {
+    .container {
         background: $medium-gray;
-    }
 
-    img.img-app {
-        display: inline-block;
+        img.img-app {
+            display: inline-block;
 
-        &:first-child {
-            margin-right: 12px;
+            &:first-child {
+                margin-right: 12px;
+            }
         }
-    }
 
-    .menu-item {
-        padding-top: 0;
-        padding-bottom: 0;
-        vertical-align: middle;
-    }
-
-    .pb0 {
-        padding-bottom: 0;
-    }
-
-    .bottom-text {
-        padding-top: 6px;
-    }
-
-    @media only screen and (max-width: #{$global-breakpoint}) {
         .menu-item {
-            padding-right: 36px !important;
+            padding-top: 0;
+            padding-bottom: 0;
+            vertical-align: middle;
+        }
+
+        .pb0 {
+            padding-bottom: 0;
+        }
+
+        .bottom-text {
+            padding-top: 6px;
+        }
+
+        @media only screen and (max-width: #{$global-breakpoint}) {
+            .menu-item {
+                padding-right: 36px !important;
+            }
         }
     }
 }
