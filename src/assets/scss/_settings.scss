@@ -18,12 +18,36 @@ $primary-color: #6a62d2;
 $dark-gray: #6d7885;
 $medium-gray: #f0f2f5;
 $light-gray: #f0f2f5;
-$black: #101820;
+$black: #364059;
 $white: #fff;
 $blue: #007aff;
 $grey: #5e6976;
 $purple-dark: rgb(30, 21, 80);
 $purple-medium: #553e84;
+
+$primary-invert-text: #fff;
+$primary-text: #364059;
+$secondary-text: #5e6976;
+$bg-primary: #fffef3;
+$bg-secondary: #efebe0;
+$bg-tertiary: #f0ead8;
+$bg-quaternary: #e7dec5;
+$btn-primary: #2f41b0;
+
+$digital4-20: #078740;
+$digital8-20: #1a6240;
+$digital5-37: #eab207;
+$digital5-36: #e1743c;
+$digital5-50: #447acf;
+$bingo-90: #78c0f2;
+$bingo-75: #234770;
+$bingo-3x3: #6d68b3;
+$bingo-4x4: #397eb9;
+
+$digital4-20_num: #1f6239;
+$digital8-20_num: #144230;
+$digital5-37_num: #e7750c;
+$digital5-36_num: #cd3201;
 
 // 1. Global
 // ---------
@@ -42,7 +66,7 @@ $global-padding: 16px;
 $global-margin: 16px;
 $global-radius: 3px;
 $global-rounded: 500px;
-$global-breakpoint: $global-width + $global-gutter;
+$global-breakpoint: $global-width;
 
 // 2. Grid
 // -------
@@ -103,22 +127,22 @@ $stat-font-size: 40px;
 $button-padding: (
     tiny: 4px 8px 4px 8px,
     small: 5px 10px 5px 10px,
-    default: 15px 31px 15px 31px,
+    default: 12px 20px 12px 20px,
     large: 10px 20px 10px 20px,
 );
 $button-font-size: (
     tiny: 10px,
     small: 12px,
-    default: 16px,
+    default: 20px,
     large: 20px,
 );
-$button-color: $white;
+$button-color: $primary-invert-text;
 $button-color-alt: $medium-gray;
 $button-font-weight: 500;
 $button-margin: 0 0 $global-margin 0;
-$button-background: $purple-medium;
-$button-border: 1px solid $purple-dark;
-$button-radius: 8px;
+$button-background: $btn-primary;
+$button-border: 1px solid $btn-primary;
+$button-radius: 12px;
 $button-rounded: $global-rounded;
 
 // 6. Callout

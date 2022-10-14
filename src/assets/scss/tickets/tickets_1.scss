@@ -1,0 +1,142 @@
+@import "mixins";
+
+.email-tickets {
+    @include email-tickets;
+}
+
+.ticket {
+    &.digital {
+        .combo {
+            .col-body {
+                padding: 0 !important;
+            }
+            .columns-wrap {
+                &.first {
+                    padding-right: 8px;
+                }
+                &.last {
+                    padding-left: 8px;
+                }
+
+                .columns {
+                    padding-left: 2px;
+                    padding-right: 2px;
+
+                    &.last {
+                        width: 100%;
+                    }
+
+                    @media only screen and (max-width: #{$global-breakpoint}) {
+                        margin-left: 12px !important;
+
+                        &.first {
+                            margin-left: 0 !important;
+                        }
+                    }
+
+                    .callout {
+                        width: 30px;
+                        height: 30px;
+
+                        .callout-digital-cell {
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            border: 0 !important;
+                            text-align: center;
+                            vertical-align: middle;
+                            border-radius: 8px;
+                            color: $primary-invert-text;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .field-name {
+                    .callout {
+                        width: 60px;
+                        height: auto;
+
+                        .callout-inner {
+                            padding: 0 !important;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: $primary-invert-text;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+
+            &.digital4-20 {
+                .callout-digital-cell {
+                    background-color: $digital4-20_num;
+                }
+            }
+
+            &.digital8-20 {
+                .callout-digital-cell {
+                    background-color: $digital8-20_num;
+                }
+            }
+
+            &.digital5-36 {
+                .callout-digital-cell {
+                    background-color: $digital5-36_num;
+                }
+            }
+
+            &.digital5-37 {
+                .callout-digital-cell {
+                    background-color: $digital5-37_num;
+                }
+            }
+        }
+    }
+    &-head {
+        &.digital4-20 {
+            .callout-inner {
+                background-color: $digital4-20;
+            }
+        }
+
+        &.digital8-20 {
+            .callout-inner {
+                background-color: $digital8-20;
+            }
+        }
+
+        &.digital5-37 {
+            .callout-inner {
+                background-color: $digital5-37;
+            }
+        }
+
+        &.digital5-36 {
+            .callout-inner {
+                background-color: $digital5-36;
+            }
+        }
+
+        &.digital5-50 {
+            .callout-inner {
+                background-color: $digital5-50;
+            }
+        }
+
+        .callout {
+            margin: 0 !important;
+
+            .callout-head-wrap {
+                @include ticket-head;
+            }
+        }
+    }
+
+    &-info {
+        @include ticket-info;
+    }
+}
